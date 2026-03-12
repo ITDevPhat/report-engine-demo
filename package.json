@@ -2,7 +2,7 @@
     "name": "telerik-engine-viz",
     "version": "1.0.0",
     "private": true,
-    "homepage": "https://itdevphat.github.io/report-engin-demo",
+    "homepage": "https://itdevphat.github.io/report-engine-demo",
     "scripts": {
         "dev": "vite",
         "build": "vite build",

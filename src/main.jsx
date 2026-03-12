@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import AppV2 from './AppV2.jsx';
+import AppV3 from './AppV3.jsx';
 
 function Root() {
     const [version, setVersion] = useState('v1');
@@ -25,9 +26,18 @@ function Root() {
                 >
                     App V2
                 </button>
+
+                <button
+                    onClick={() => setVersion('v3')}
+                    className="px-3 py-1 text-xs bg-blue-600 text-white rounded"
+                >
+                    App V3
+                </button>
             </div>
 
-            {version === 'v1' ? <App /> : <AppV2 />}
+            {version === 'v1' && <App />}
+            {version === 'v2' && <AppV2 />}
+            {version === 'v3' && <AppV3 />}
         </div>
     );
 }
